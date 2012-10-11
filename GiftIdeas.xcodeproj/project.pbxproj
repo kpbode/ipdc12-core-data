@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB7DEEBB1626A42700C74B85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7DEEBA1626A42700C74B85 /* UIKit.framework */; };
+		CB7DEEBD1626A42700C74B85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7DEEBC1626A42700C74B85 /* Foundation.framework */; };
+		CB7DEEBF1626A42700C74B85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7DEEBE1626A42700C74B85 /* CoreGraphics.framework */; };
+		CB7DEEC11626A42700C74B85 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7DEEC01626A42700C74B85 /* CoreData.framework */; };
+		CB7DEEC71626A42700C74B85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEEC51626A42700C74B85 /* InfoPlist.strings */; };
+		CB7DEEC91626A42700C74B85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEEC81626A42700C74B85 /* main.m */; };
+		CB7DEECD1626A42700C74B85 /* KPBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEECC1626A42700C74B85 /* KPBAppDelegate.m */; };
+		CB7DEECF1626A42700C74B85 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEECE1626A42700C74B85 /* Default.png */; };
+		CB7DEED11626A42700C74B85 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEED01626A42700C74B85 /* Default@2x.png */; };
+		CB7DEED31626A42700C74B85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEED21626A42700C74B85 /* Default-568h@2x.png */; };
+		CB7DEED61626A42700C74B85 /* GiftIdeas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEED41626A42700C74B85 /* GiftIdeas.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB7DEEB61626A42600C74B85 /* GiftIdeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftIdeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7DEEBA1626A42700C74B85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CB7DEEBC1626A42700C74B85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB7DEEBE1626A42700C74B85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB7DEEC01626A42700C74B85 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CB7DEEC41626A42700C74B85 /* GiftIdeas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GiftIdeas-Info.plist"; sourceTree = "<group>"; };
+		CB7DEEC61626A42700C74B85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB7DEEC81626A42700C74B85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB7DEECA1626A42700C74B85 /* GiftIdeas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GiftIdeas-Prefix.pch"; sourceTree = "<group>"; };
+		CB7DEECB1626A42700C74B85 /* KPBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPBAppDelegate.h; sourceTree = "<group>"; };
+		CB7DEECC1626A42700C74B85 /* KPBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPBAppDelegate.m; sourceTree = "<group>"; };
+		CB7DEECE1626A42700C74B85 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CB7DEED01626A42700C74B85 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CB7DEED21626A42700C74B85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CB7DEED51626A42700C74B85 /* GiftIdeas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GiftIdeas.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB7DEEB31626A42600C74B85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7DEEBB1626A42700C74B85 /* UIKit.framework in Frameworks */,
+				CB7DEEBD1626A42700C74B85 /* Foundation.framework in Frameworks */,
+				CB7DEEBF1626A42700C74B85 /* CoreGraphics.framework in Frameworks */,
+				CB7DEEC11626A42700C74B85 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB7DEEAB1626A42600C74B85 = {
+			isa = PBXGroup;
+			children = (
+				CB7DEEC21626A42700C74B85 /* GiftIdeas */,
+				CB7DEEB91626A42700C74B85 /* Frameworks */,
+				CB7DEEB71626A42600C74B85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB7DEEB71626A42600C74B85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DEEB61626A42600C74B85 /* GiftIdeas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB7DEEB91626A42700C74B85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DEEBA1626A42700C74B85 /* UIKit.framework */,
+				CB7DEEBC1626A42700C74B85 /* Foundation.framework */,
+				CB7DEEBE1626A42700C74B85 /* CoreGraphics.framework */,
+				CB7DEEC01626A42700C74B85 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB7DEEC21626A42700C74B85 /* GiftIdeas */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DEECB1626A42700C74B85 /* KPBAppDelegate.h */,
+				CB7DEECC1626A42700C74B85 /* KPBAppDelegate.m */,
+				CB7DEED41626A42700C74B85 /* GiftIdeas.xcdatamodeld */,
+				CB7DEEC31626A42700C74B85 /* Supporting Files */,
+			);
+			path = GiftIdeas;
+			sourceTree = "<group>";
+		};
+		CB7DEEC31626A42700C74B85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DEEC41626A42700C74B85 /* GiftIdeas-Info.plist */,
+				CB7DEEC51626A42700C74B85 /* InfoPlist.strings */,
+				CB7DEEC81626A42700C74B85 /* main.m */,
+				CB7DEECA1626A42700C74B85 /* GiftIdeas-Prefix.pch */,
+				CB7DEECE1626A42700C74B85 /* Default.png */,
+				CB7DEED01626A42700C74B85 /* Default@2x.png */,
+				CB7DEED21626A42700C74B85 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB7DEEB51626A42600C74B85 /* GiftIdeas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7DEED91626A42700C74B85 /* Build configuration list for PBXNativeTarget "GiftIdeas" */;
+			buildPhases = (
+				CB7DEEB21626A42600C74B85 /* Sources */,
+				CB7DEEB31626A42600C74B85 /* Frameworks */,
+				CB7DEEB41626A42600C74B85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiftIdeas;
+			productName = GiftIdeas;
+			productReference = CB7DEEB61626A42600C74B85 /* GiftIdeas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB7DEEAD1626A42600C74B85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KPB;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Karl Bode";
+			};
+			buildConfigurationList = CB7DEEB01626A42600C74B85 /* Build configuration list for PBXProject "GiftIdeas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB7DEEAB1626A42600C74B85;
+			productRefGroup = CB7DEEB71626A42600C74B85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB7DEEB51626A42600C74B85 /* GiftIdeas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB7DEEB41626A42600C74B85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7DEEC71626A42700C74B85 /* InfoPlist.strings in Resources */,
+				CB7DEECF1626A42700C74B85 /* Default.png in Resources */,
+				CB7DEED11626A42700C74B85 /* Default@2x.png in Resources */,
+				CB7DEED31626A42700C74B85 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB7DEEB21626A42600C74B85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7DEEC91626A42700C74B85 /* main.m in Sources */,
+				CB7DEECD1626A42700C74B85 /* KPBAppDelegate.m in Sources */,
+				CB7DEED61626A42700C74B85 /* GiftIdeas.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB7DEEC51626A42700C74B85 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB7DEEC61626A42700C74B85 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB7DEED71626A42700C74B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB7DEED81626A42700C74B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB7DEEDA1626A42700C74B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GiftIdeas/GiftIdeas-Prefix.pch";
+				INFOPLIST_FILE = "GiftIdeas/GiftIdeas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CB7DEEDB1626A42700C74B85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GiftIdeas/GiftIdeas-Prefix.pch";
+				INFOPLIST_FILE = "GiftIdeas/GiftIdeas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB7DEEB01626A42600C74B85 /* Build configuration list for PBXProject "GiftIdeas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7DEED71626A42700C74B85 /* Debug */,
+				CB7DEED81626A42700C74B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB7DEED91626A42700C74B85 /* Build configuration list for PBXNativeTarget "GiftIdeas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7DEEDA1626A42700C74B85 /* Debug */,
+				CB7DEEDB1626A42700C74B85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB7DEED41626A42700C74B85 /* GiftIdeas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB7DEED51626A42700C74B85 /* GiftIdeas.xcdatamodel */,
+			);
+			currentVersion = CB7DEED51626A42700C74B85 /* GiftIdeas.xcdatamodel */;
+			path = GiftIdeas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB7DEEAD1626A42600C74B85 /* Project object */;
+}
