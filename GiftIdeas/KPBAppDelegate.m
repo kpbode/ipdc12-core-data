@@ -7,6 +7,13 @@
 //
 
 #import "KPBAppDelegate.h"
+#import "KPBPersonListViewController.h"
+
+@interface KPBAppDelegate ()
+
+@property (nonatomic, strong, readwrite) NSManagedObjectContext *masterManagedObjectContext;
+
+@end
 
 @implementation KPBAppDelegate
 
@@ -16,10 +23,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    UINavigationController *navigationController = (UINavigationController *) self.window.rootViewController;
+    
+    KPBPersonListViewController *personListViewController = [navigationController.viewControllers objectAtIndex:0];
+    personListViewController.managedObjectContext = self.managedObjectContext;
+    
     return YES;
 }
 
@@ -27,6 +35,8 @@
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
+    [self saveContext];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
@@ -53,15 +63,27 @@
 
 - (void)saveContext
 {
+    // save the ui context first
+    
     NSError *error = nil;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
-    if (managedObjectContext != nil) {
-        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
-             // Replace this implementation with code to handle the error appropriately.
-             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        } 
+    
+    if (![managedObjectContext hasChanges]) return;
+    if (![managedObjectContext save:&error]) {
+        NSLog(@"failed to save ui-managedObjectContext: %@", [error userInfo]);
+    } else {
+        
+        // save the master context
+        
+        managedObjectContext = self.masterManagedObjectContext;
+        
+        if (![managedObjectContext hasChanges]) return;
+        [managedObjectContext performBlockAndWait:^{
+            NSError *error1 = nil;
+            if (![managedObjectContext save:&error1]) {
+                NSLog(@"failed to save master-managedObjectContext: %@", [error1 userInfo]);
+            }
+        }];
     }
 }
 
@@ -77,8 +99,14 @@
     
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        _managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [_managedObjectContext setPersistentStoreCoordinator:coordinator];
+        
+        NSManagedObjectContext *masterManagedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+        masterManagedObjectContext.persistentStoreCoordinator = coordinator;
+        
+        self.masterManagedObjectContext = masterManagedObjectContext;
+        
+        _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+        _managedObjectContext.parentContext = masterManagedObjectContext;
     }
     return _managedObjectContext;
 }
@@ -105,9 +133,14 @@
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"GiftIdeas.sqlite"];
     
+    NSDictionary *options = @{
+        NSMigratePersistentStoresAutomaticallyOption : @YES,
+//        NSInferMappingModelAutomaticallyOption : @YES
+    };
+    
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          

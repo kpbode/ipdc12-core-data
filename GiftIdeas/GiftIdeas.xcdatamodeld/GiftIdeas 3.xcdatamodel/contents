@@ -2,6 +2,7 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Auction" representedClassName="KPBAuction" syncable="YES">
         <attribute name="image" optional="YES" attributeType="Transformable" valueTransformerName="KPBImageTransformer" syncable="YES"/>
+        <attribute name="serverId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="subtitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
         <attribute name="url" attributeType="String" syncable="YES"/>
@@ -11,9 +12,15 @@
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="query" attributeType="String" syncable="YES"/>
         <relationship name="auctions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Auction" inverseName="person" inverseEntity="Auction" syncable="YES"/>
+        <relationship name="keywords" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SearchKeyword" inverseName="person" inverseEntity="SearchKeyword" syncable="YES"/>
+    </entity>
+    <entity name="SearchKeyword" representedClassName="KPBSearchKeyword" syncable="YES">
+        <attribute name="term" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="person" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="keywords" inverseEntity="Person" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Person" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="Auction" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Auction" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Person" positionX="108" positionY="-153" width="128" height="105"/>
+        <element name="SearchKeyword" positionX="-126" positionY="99" width="128" height="75"/>
     </elements>
 </model>

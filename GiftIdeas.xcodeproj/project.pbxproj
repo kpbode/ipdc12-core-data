@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB22EC3C16342B5A0037ABB2 /* GiftIdeas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB22EC3A16342B5A0037ABB2 /* GiftIdeas.xcdatamodeld */; };
+		CB22EC4016342D3D0037ABB2 /* From2To3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = CB22EC3F16342D3D0037ABB2 /* From2To3.xcmappingmodel */; };
 		CB7DEEBB1626A42700C74B85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7DEEBA1626A42700C74B85 /* UIKit.framework */; };
 		CB7DEEBD1626A42700C74B85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7DEEBC1626A42700C74B85 /* Foundation.framework */; };
 		CB7DEEBF1626A42700C74B85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7DEEBE1626A42700C74B85 /* CoreGraphics.framework */; };
@@ -17,10 +19,23 @@
 		CB7DEECF1626A42700C74B85 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEECE1626A42700C74B85 /* Default.png */; };
 		CB7DEED11626A42700C74B85 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEED01626A42700C74B85 /* Default@2x.png */; };
 		CB7DEED31626A42700C74B85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEED21626A42700C74B85 /* Default-568h@2x.png */; };
-		CB7DEED61626A42700C74B85 /* GiftIdeas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEED41626A42700C74B85 /* GiftIdeas.xcdatamodeld */; };
+		CB7DEEDD1626A47000C74B85 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEEDC1626A47000C74B85 /* Storyboard.storyboard */; };
+		CB7DEEE01626A4B000C74B85 /* KPBPersonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEEDF1626A4B000C74B85 /* KPBPersonListViewController.m */; };
+		CB7DEEE31626A4C700C74B85 /* KPBEditPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEEE21626A4C700C74B85 /* KPBEditPersonViewController.m */; };
+		CB7DEEE61626A4E400C74B85 /* KPBAuctionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEEE51626A4E300C74B85 /* KPBAuctionListViewController.m */; };
+		CB7DEEF41626AD3C00C74B85 /* KPBAuction.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEEF31626AD3C00C74B85 /* KPBAuction.m */; };
+		CB7DEEF71626AD3D00C74B85 /* KPBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DEEF61626AD3D00C74B85 /* KPBPerson.m */; };
+		CB7EB8F61634233000ED8DDC /* KPBMigrateQueryToSearchKeywordsPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7EB8F51634233000ED8DDC /* KPBMigrateQueryToSearchKeywordsPolicy.m */; };
+		CB7EB9011634257000ED8DDC /* KPBSearchKeyword.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7EB9001634257000ED8DDC /* KPBSearchKeyword.m */; };
+		CB92D2DF1626BDAB00F29200 /* KPBImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB92D2DE1626BDAB00F29200 /* KPBImageTransformer.m */; };
+		CB92D2E31626C1C500F29200 /* KPBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB92D2E21626C1C500F29200 /* KPBDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB22EC3B16342B5A0037ABB2 /* GiftIdeas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GiftIdeas.xcdatamodel; sourceTree = "<group>"; };
+		CB22EC3D16342BDA0037ABB2 /* GiftIdeas 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GiftIdeas 2.xcdatamodel"; sourceTree = "<group>"; };
+		CB22EC3E16342CCA0037ABB2 /* GiftIdeas 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GiftIdeas 3.xcdatamodel"; sourceTree = "<group>"; };
+		CB22EC3F16342D3D0037ABB2 /* From2To3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = From2To3.xcmappingmodel; sourceTree = "<group>"; };
 		CB7DEEB61626A42600C74B85 /* GiftIdeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftIdeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7DEEBA1626A42700C74B85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CB7DEEBC1626A42700C74B85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,7 +50,25 @@
 		CB7DEECE1626A42700C74B85 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CB7DEED01626A42700C74B85 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CB7DEED21626A42700C74B85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CB7DEED51626A42700C74B85 /* GiftIdeas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GiftIdeas.xcdatamodel; sourceTree = "<group>"; };
+		CB7DEEDC1626A47000C74B85 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		CB7DEEDE1626A4B000C74B85 /* KPBPersonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBPersonListViewController.h; sourceTree = "<group>"; };
+		CB7DEEDF1626A4B000C74B85 /* KPBPersonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBPersonListViewController.m; sourceTree = "<group>"; };
+		CB7DEEE11626A4C700C74B85 /* KPBEditPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBEditPersonViewController.h; sourceTree = "<group>"; };
+		CB7DEEE21626A4C700C74B85 /* KPBEditPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBEditPersonViewController.m; sourceTree = "<group>"; };
+		CB7DEEE41626A4E300C74B85 /* KPBAuctionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBAuctionListViewController.h; sourceTree = "<group>"; };
+		CB7DEEE51626A4E300C74B85 /* KPBAuctionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBAuctionListViewController.m; sourceTree = "<group>"; };
+		CB7DEEF21626AD3C00C74B85 /* KPBAuction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBAuction.h; sourceTree = "<group>"; };
+		CB7DEEF31626AD3C00C74B85 /* KPBAuction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBAuction.m; sourceTree = "<group>"; };
+		CB7DEEF51626AD3D00C74B85 /* KPBPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBPerson.h; sourceTree = "<group>"; };
+		CB7DEEF61626AD3D00C74B85 /* KPBPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBPerson.m; sourceTree = "<group>"; };
+		CB7EB8F41634233000ED8DDC /* KPBMigrateQueryToSearchKeywordsPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBMigrateQueryToSearchKeywordsPolicy.h; sourceTree = "<group>"; };
+		CB7EB8F51634233000ED8DDC /* KPBMigrateQueryToSearchKeywordsPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBMigrateQueryToSearchKeywordsPolicy.m; sourceTree = "<group>"; };
+		CB7EB8FF1634257000ED8DDC /* KPBSearchKeyword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBSearchKeyword.h; sourceTree = "<group>"; };
+		CB7EB9001634257000ED8DDC /* KPBSearchKeyword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBSearchKeyword.m; sourceTree = "<group>"; };
+		CB92D2DD1626BDAB00F29200 /* KPBImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBImageTransformer.h; sourceTree = "<group>"; };
+		CB92D2DE1626BDAB00F29200 /* KPBImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBImageTransformer.m; sourceTree = "<group>"; };
+		CB92D2E11626C1C500F29200 /* KPBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPBDataManager.h; sourceTree = "<group>"; };
+		CB92D2E21626C1C500F29200 /* KPBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPBDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +117,17 @@
 		CB7DEEC21626A42700C74B85 /* GiftIdeas */ = {
 			isa = PBXGroup;
 			children = (
+				CB7EB8F41634233000ED8DDC /* KPBMigrateQueryToSearchKeywordsPolicy.h */,
+				CB7EB8F51634233000ED8DDC /* KPBMigrateQueryToSearchKeywordsPolicy.m */,
+				CB7DEEF11626AD2500C74B85 /* Model */,
+				CB7DEEEF1626AD1F00C74B85 /* Controller */,
 				CB7DEECB1626A42700C74B85 /* KPBAppDelegate.h */,
 				CB7DEECC1626A42700C74B85 /* KPBAppDelegate.m */,
-				CB7DEED41626A42700C74B85 /* GiftIdeas.xcdatamodeld */,
 				CB7DEEC31626A42700C74B85 /* Supporting Files */,
+				CB7DEEDC1626A47000C74B85 /* Storyboard.storyboard */,
+				CB92D2E11626C1C500F29200 /* KPBDataManager.h */,
+				CB92D2E21626C1C500F29200 /* KPBDataManager.m */,
+				CB22EC3F16342D3D0037ABB2 /* From2To3.xcmappingmodel */,
 			);
 			path = GiftIdeas;
 			sourceTree = "<group>";
@@ -104,6 +144,35 @@
 				CB7DEED21626A42700C74B85 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB7DEEEF1626AD1F00C74B85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DEEDE1626A4B000C74B85 /* KPBPersonListViewController.h */,
+				CB7DEEDF1626A4B000C74B85 /* KPBPersonListViewController.m */,
+				CB7DEEE11626A4C700C74B85 /* KPBEditPersonViewController.h */,
+				CB7DEEE21626A4C700C74B85 /* KPBEditPersonViewController.m */,
+				CB7DEEE41626A4E300C74B85 /* KPBAuctionListViewController.h */,
+				CB7DEEE51626A4E300C74B85 /* KPBAuctionListViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CB7DEEF11626AD2500C74B85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DEEF51626AD3D00C74B85 /* KPBPerson.h */,
+				CB7DEEF61626AD3D00C74B85 /* KPBPerson.m */,
+				CB7DEEF21626AD3C00C74B85 /* KPBAuction.h */,
+				CB7DEEF31626AD3C00C74B85 /* KPBAuction.m */,
+				CB92D2DD1626BDAB00F29200 /* KPBImageTransformer.h */,
+				CB92D2DE1626BDAB00F29200 /* KPBImageTransformer.m */,
+				CB7EB8FF1634257000ED8DDC /* KPBSearchKeyword.h */,
+				CB7EB9001634257000ED8DDC /* KPBSearchKeyword.m */,
+				CB22EC3A16342B5A0037ABB2 /* GiftIdeas.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +231,7 @@
 				CB7DEECF1626A42700C74B85 /* Default.png in Resources */,
 				CB7DEED11626A42700C74B85 /* Default@2x.png in Resources */,
 				CB7DEED31626A42700C74B85 /* Default-568h@2x.png in Resources */,
+				CB7DEEDD1626A47000C74B85 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +244,17 @@
 			files = (
 				CB7DEEC91626A42700C74B85 /* main.m in Sources */,
 				CB7DEECD1626A42700C74B85 /* KPBAppDelegate.m in Sources */,
-				CB7DEED61626A42700C74B85 /* GiftIdeas.xcdatamodeld in Sources */,
+				CB7DEEE01626A4B000C74B85 /* KPBPersonListViewController.m in Sources */,
+				CB7DEEE31626A4C700C74B85 /* KPBEditPersonViewController.m in Sources */,
+				CB7DEEE61626A4E400C74B85 /* KPBAuctionListViewController.m in Sources */,
+				CB7DEEF41626AD3C00C74B85 /* KPBAuction.m in Sources */,
+				CB7DEEF71626AD3D00C74B85 /* KPBPerson.m in Sources */,
+				CB92D2DF1626BDAB00F29200 /* KPBImageTransformer.m in Sources */,
+				CB92D2E31626C1C500F29200 /* KPBDataManager.m in Sources */,
+				CB7EB8F61634233000ED8DDC /* KPBMigrateQueryToSearchKeywordsPolicy.m in Sources */,
+				CB7EB9011634257000ED8DDC /* KPBSearchKeyword.m in Sources */,
+				CB22EC3C16342B5A0037ABB2 /* GiftIdeas.xcdatamodeld in Sources */,
+				CB22EC4016342D3D0037ABB2 /* From2To3.xcmappingmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +328,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GiftIdeas/GiftIdeas-Prefix.pch";
 				INFOPLIST_FILE = "GiftIdeas/GiftIdeas-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -259,6 +340,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GiftIdeas/GiftIdeas-Prefix.pch";
 				INFOPLIST_FILE = "GiftIdeas/GiftIdeas-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -283,16 +365,19 @@
 				CB7DEEDB1626A42700C74B85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CB7DEED41626A42700C74B85 /* GiftIdeas.xcdatamodeld */ = {
+		CB22EC3A16342B5A0037ABB2 /* GiftIdeas.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CB7DEED51626A42700C74B85 /* GiftIdeas.xcdatamodel */,
+				CB22EC3E16342CCA0037ABB2 /* GiftIdeas 3.xcdatamodel */,
+				CB22EC3D16342BDA0037ABB2 /* GiftIdeas 2.xcdatamodel */,
+				CB22EC3B16342B5A0037ABB2 /* GiftIdeas.xcdatamodel */,
 			);
-			currentVersion = CB7DEED51626A42700C74B85 /* GiftIdeas.xcdatamodel */;
+			currentVersion = CB22EC3E16342CCA0037ABB2 /* GiftIdeas 3.xcdatamodel */;
 			path = GiftIdeas.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
